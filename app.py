@@ -167,7 +167,8 @@ with st.form("rtmliss_form", clear_on_submit=False):
     sbp_val = np.nan
     pulse_val = np.nan
 
-    col1, _, col2 = st.columns([2, 1, 2])
+    # Only one column now
+    col1 = st.columns(1)[0]
 
     with col1:
         st.subheader("Patient Info & Vitals")
@@ -194,11 +195,6 @@ with st.form("rtmliss_form", clear_on_submit=False):
         else:
             user_inputs['ShockIndex'] = np.nan
 
-    with col2:
-        st.subheader("Summary")
-        user_inputs['NumberOfInjuries'] = int(sum(injury_inputs.values()))
-        st.write(f"Number of injuries selected: **{user_inputs['NumberOfInjuries']}**")
-
     # Merge injury inputs inside the form (so X is complete at submit time)
     user_inputs.update(injury_inputs)
 
@@ -210,6 +206,7 @@ with st.form("rtmliss_form", clear_on_submit=False):
         st.error(f"Column alignment error: {e}")
 
     submitted = st.form_submit_button("Predict Mortality")
+
 
 # ---------- Output (persist last prediction) ----------
 st.markdown("### RT-pMLISS Score (Predicted Mortality):")
