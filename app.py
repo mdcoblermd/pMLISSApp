@@ -133,13 +133,13 @@ injury_categories_display = {
         "Subarachnoid Hemorrhage (SAH)", "Subdural Hematoma (SDH)", "Skull Fracture"
     ],
     "Neck/Back injury?": [
-        "Critical Neck Injury", "Spinal Cord Injury (SCI)", "Spine Fracture"
+        "Critical Neck Injury (Vascular or Aerodigestive)", "Spinal Cord Injury (SCI)", "Spine Fracture"
     ],
     "Thoracic/Abdominal/Pelvic injury?": [
-        "Kidney Injury", "Spleen Injury", "Hollow Viscus Injury",
+        "Kidney Injury", "Spleen Injury", "Hollow Viscus Injury (Stomach, Small Bowel, Colon, Rectal)",
         "Pelvic Fracture", "Liver Injury",
         "Cardiac Injury", "Lung Injury", "Rib Fracture",
-        "Chest/abdomen/pelvis Vascular Injury"
+        "Chest/Abdomen/Pelvis Vascular Injury"
     ],
     "Extremity injury?": [
         "Upper Extremity Long Bone Fracture",
