@@ -33,7 +33,7 @@ def load_artifacts():
         scaler = pickle.load(f)
     return model_mor, model_icu, scaler
 
-model, scaler = load_artifacts()
+model_mor, model_icu, scaler = load_artifacts()
 
 # ---------- Title & intro ----------
 st.title("RT-MLISS Score")
