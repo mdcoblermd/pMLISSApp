@@ -25,7 +25,7 @@ label { margin-bottom: 0.2rem !important; }
 # ---------- Load artifacts (cached) ----------
 @st.cache_resource
 def load_artifacts():
-    with open("calibrated_model_medi_mor.pkl", "rb") as f:
+    with open("calibrated_model_pedi_mor.pkl", "rb") as f:
         model_mor = pickle.load(f)
     with open("calibrated_model_pedi_icu", "rb") as f:
         model_icu = pickle.load(f)
