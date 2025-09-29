@@ -121,10 +121,10 @@ frontend_labels = {
     "Liver Injury": "LiverInjury",
     "Upper Extremity Long Bone Fracture": "UELongBoneFx",
     "Lower Extremity Long Bone Fracture": "LELongBoneFx",
-    "Hollow Viscus Injury": "HollowViscusInjury",
+    "Hollow Viscus Injury (Stomach, Small Bowel, Colon, Rectal)": "HollowViscusInjury",
     "Peripheral Vascular Injury": "PeripheralVascularInjury",
-    "Critical Neck Injury": "NeckCriticalInjury",
-    "Chest/abdomen/pelvis Vascular Injury": "CAPVascularInjury"
+    "Critical Neck Injury (Vascular or Aerodigestive)": "NeckCriticalInjury",
+    "Chest/Abdomen/Pelvis Vascular Injury": "CAPVascularInjury"
 }
 
 injury_categories_display = {
