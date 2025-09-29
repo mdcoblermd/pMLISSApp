@@ -12,7 +12,7 @@ import numpy as np
 import re
 
 # ---------- Page setup ----------
-st.set_page_config(page_title="RT-MLISS", layout="centered")
+st.set_page_config(page_title="RT-pMLISS", layout="centered")
 st.markdown("""
 <style>
 .block-container { max-width: 1100px; padding: 2rem 4rem; }
@@ -209,8 +209,6 @@ with st.form("rtmliss_form", clear_on_submit=False):
 
 
 # ---------- Output (persist last prediction) ----------
-st.markdown("### RT-pMLISS Score (Predicted Mortality):")
-st.markdown("### RT-pMLISS ICU Subscore (Predicted need for ICU):")
 mortality_output = st.empty()
 icu_output = st.empty()
 
@@ -231,13 +229,20 @@ if submitted and X is not None:
 
 if st.session_state['last_pred_mor'] is not None:
     mortality_output.markdown(
-        f"<p style='font-size:36px;font-weight:bold;color:#d62728;'>{st.session_state['last_pred_mor']:.1%}</p>",
+        f"<p style='font-size:22px;'>"
+        f"<strong>RT-pMLISS Score (Predicted Mortality):</strong> "
+        f"<span style='font-size:36px;font-weight:bold;color:#d62728;'>"
+        f"{st.session_state['last_pred_mor']:.1%}</span></p>",
         unsafe_allow_html=True
     )
     icu_output.markdown(
-        f"<p style='font-size:36px;font-weight:bold;color:#d62728;'>{st.session_state['last_pred_icu']:.1%}</p>",
+        f"<p style='font-size:22px;'>"
+        f"<strong>RT-pMLISS ICU Subscore (Predicted Need for ICU):</strong> "
+        f"<span style='font-size:36px;font-weight:bold;color:#d62728;'>"
+        f"{st.session_state['last_pred_icu']:.1%}</span></p>",
         unsafe_allow_html=True
     )
+
 
 # ---------- Reset (only clears our own keys) ----------
 if st.button("Reset Form"):
