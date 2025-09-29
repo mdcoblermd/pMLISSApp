@@ -31,7 +31,7 @@ def load_artifacts():
         model_icu = pickle.load(f)
     with open("scaler_pedi.pkl", "rb") as f:
         scaler = pickle.load(f)
-    return model, scaler
+    return model_mor, model_icu, scaler
 
 model, scaler = load_artifacts()
 
