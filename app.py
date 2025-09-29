@@ -49,7 +49,7 @@ Models are calibrated so the output reflects the predicted probability of in-hos
 (planned or unplanned) based on the training data.
 </p>
 
-<p style='font-size:12px;color:#100;'>
+<p style='font-size:12px;color:#d62728;'>
 Predicted need for ICU is assuming patient survives initial resuscitation.  Patients with high predicted mortality may have
 underestimated predicted need for ICU.
 </p>
