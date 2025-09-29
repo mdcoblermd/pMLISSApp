@@ -115,7 +115,7 @@ frontend_labels = {
     "Pelvic Fracture": "PelvicFx",
     "Liver Injury": "LiverInjury",
     "Upper Extremity Long Bone Fracture": "UELongBoneFx",
-    "Lower Extremity Long Bone Fracture": "LELongBoneFx"
+    "Lower Extremity Long Bone Fracture": "LELongBoneFx",
     "Hollow Viscus Injury": "HollowViscusInjury",
     "Peripheral Vascular Injury": "PeripheralVascularInjury",
     "Critical Neck Injury": "NeckCriticalInjury",
