@@ -131,7 +131,7 @@ injury_categories_display = {
         "Critical Neck Injury", "Spinal Cord Injury (SCI)", "Spine Fracture"
     ],
     "Thoracic/Abdominal/Pelvic injury?": [
-        "Kidney Injury", "Spleen Injury", "Hollow Viscus Injury"
+        "Kidney Injury", "Spleen Injury", "Hollow Viscus Injury",
         "Pelvic Fracture", "Liver Injury",
         "Cardiac Injury", "Lung Injury", "Rib Fracture",
         "Chest/abdomen/pelvis Vascular Injury"
