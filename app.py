@@ -36,7 +36,7 @@ def load_artifacts():
 model_mor, model_icu, scaler = load_artifacts()
 
 # ---------- Title & intro ----------
-st.title("RT-MLISS Score")
+st.title("RT-pMLISS Score")
 st.markdown("""
 <h4 style='margin-top:-8px;color:gray;'>A real-time mortality and ICU admission prediction tool for pediatric trauma patients</h4>
 <p style='font-size:16px;color:#555;'>
